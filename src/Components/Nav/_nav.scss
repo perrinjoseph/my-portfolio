@@ -1,0 +1,88 @@
+.nav {
+  background-color: $nav-bg-color;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  &__menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 80px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    display: flex;
+    color: rgb(98, 98, 98);
+    height: 80%;
+    align-items: center;
+
+    & > li {
+      margin: 0px 30px;
+    }
+  }
+  &__item {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: black;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.logo {
+  width: 50px;
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  outline: none;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 300ms ease-in-out;
+  &--contact {
+    @extend .btn;
+    border: 1px solid $btn-contact-border-color;
+  }
+  &--projects {
+    @extend .btn;
+    width: 130px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  &--skills {
+    margin-top: 10px;
+    width: 130px;
+    @extend .btn;
+    border-radius: 10px;
+  }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(149, 157, 165, 0.2) 5px 10px 8px;
+    background-color: $btn-contact-border-color;
+    color: white;
+  }
+  &:active {
+    transform: scale(1.02);
+    box-shadow: rgba(149, 157, 165, 0.2) 5px 10px 18px;
+  }
+}
