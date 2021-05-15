@@ -54,7 +54,7 @@
   }
 }
 @media (max-width: 486px) {
-  .nav__item--story {
+  .nav__item--about {
     display: none;
   }
   .nav__item--skills {
@@ -71,7 +71,7 @@
 
 object {
   width: 100%;
-  max-width: 570px;
+  max-width: 770px;
 }
 @media (max-width: 328px) {
   .home__landing__typography {
@@ -86,7 +86,7 @@ object {
     padding-top: 100px;
   }
   object {
-    margin-top: -35vh;
+    margin-top: -20vh;
   }
 }
 
@@ -97,13 +97,12 @@ object {
   .home__landing__btns {
     flex-direction: column;
     margin: 10px 0px;
-
   }
   .btn--projects {
     margin-right: 0px;
-    width: 100%;
+    width: 80%;
   }
   .btn--skills {
-    width: 100%;
+    width: 80%;
   }
 }

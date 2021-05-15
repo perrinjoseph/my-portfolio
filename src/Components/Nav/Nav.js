@@ -15,10 +15,10 @@ function Nav() {
           </span>
         </li>
         <div className="nav__items">
-          <li className="nav__item--home">Home</li>
-          <li className="nav__item--projects">Projects</li>
-          <li className="nav__item--story">Story</li>
-          <li className="nav__item--skills">Skills</li>
+          <li className="nav__item nav__item--home">Home</li>
+          <li className="nav__item nav__item--projects">Projects</li>
+          <li className="nav__item nav__item--about">About</li>
+          <li className="nav__item nav__item--skills">Skills</li>
         </div>
         <button className="btn--contact">Contact</button>
       </ul>

@@ -21,7 +21,7 @@
 
   &__items {
     display: flex;
-    color: rgb(98, 98, 98);
+    color: rgb(110, 109, 109);
     height: 80%;
     align-items: center;
 
@@ -35,6 +35,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
     &:hover {
       color: black;
       transform: translateY(-2px);
@@ -57,7 +58,7 @@
   border-radius: 20px;
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
   &--contact {
     @extend .btn;
     border: 1px solid $btn-contact-border-color;
@@ -79,6 +80,7 @@
     transform: scale(1.05);
     box-shadow: rgba(149, 157, 165, 0.2) 5px 10px 8px;
     background-color: $btn-contact-border-color;
+    box-shadow: 10px 10px 20px $btn-box-shadow;
     color: white;
   }
   &:active {

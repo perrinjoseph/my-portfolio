@@ -1,0 +1,36 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__bg {
+    margin-top: -80px;
+    position: relative;
+    width: 100%;
+    // filter: blur(20px);
+  }
+  &__mid {
+    margin-top: -100px;
+    position: absolute;
+    width: 100%;
+  }
+  &__front {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.skills__info {
+  margin-top: 120px;
+  position: absolute;
+  z-index: 100;
+}
+
+@media (max-width: 779px) {
+  .skills__front,
+  .skills__bg,
+  .skills__mid {
+    filter: blur(20px);
+  }
+}

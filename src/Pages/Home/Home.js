@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
+import About from "../About/About";
+import Skills from "../Skills/Skills";
+
 import landingimg from "./OBJECTS.svg";
 
 function Home() {
@@ -23,7 +26,7 @@ function Home() {
                   deleteSpeed: 50,
                   delay: 100,
                   pauseFor: 2300,
-                  strings: ["Design", "Develop", "Improve"],
+                  strings: ["Design", "Develop", "Improve", "Test"],
                 }}
               />
             </div>
@@ -34,10 +37,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <object type="image/svg+xml" data={landingimg}>
-
-        </object>
+        <object type="image/svg+xml" data={landingimg}></object>
       </div>
+      <About />
+      <Skills/>
+
+
     </main>
   );
 }
