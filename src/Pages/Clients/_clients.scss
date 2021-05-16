@@ -1,0 +1,18 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 80px;
+  background-color: white;
+  text-align: center;
+  position: inherit;
+
+  &__header {
+    color: $heading-font-color;
+  }
+  &__logo {
+    width: 300px;
+    opacity: 0.6;
+  }
+}

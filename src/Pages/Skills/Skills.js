@@ -36,6 +36,7 @@ const skills = [
   "Nextjs",
   "GraphQL",
   "Agile",
+  "Babel"
 ];
 
 function Skills() {
@@ -64,7 +65,7 @@ function Skills() {
       ></img>
 
       <span className="about__header skills__info">
-        <p className="aboutMe">Cutting edge tech,<br></br>with a wide range of skills</p>
+        <p className="skills__header">Cutting edge tech,<br></br>with a wide range of skills</p>
         <p className="allTags">
           {skills.map((el, index) => (
             <SkillTag key={index} skill={el} />

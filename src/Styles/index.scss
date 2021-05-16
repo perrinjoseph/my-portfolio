@@ -7,9 +7,19 @@
 @import "../Components/Nav/nav";
 @import "../Pages/Home/home";
 @import "../Components/Layout/layout";
-@import '../Pages/About/about';
-@import '../Pages/Skills/skills';
-@import '../Components/SkillTag/skillTag';
+@import "../Pages/About/about";
+@import "../Pages/Skills/skills";
+@import "../Components/SkillTag/skillTag";
+
+@import "../Pages/Clients/clients";
+@import "../Pages/Projects/projects";
+@import "../Pages/Experience/experience";
+@import "../Components/ExperienceCard/experienceCard";
+@import "../Sections/TrustedClients/trustedClients";
+@import "../Components/TrustedClientCard/trustedClientCard";
+@import "../Sections/Footer/footer";
+@import "../Components/SocialMedia/socialMedia";
+@import "../Components/ContactForm/contactForm";
 
 body {
   overscroll-behavior-y: none;

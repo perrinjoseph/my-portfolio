@@ -1,0 +1,58 @@
+.experience {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 90vh;
+  align-items: center;
+  background-color: $bg-color;
+  padding: 40px;
+  &__right {
+  }
+  &__left {
+    width: 460px;
+  }
+  &__header {
+    color: $heading-font-color;
+    font-size: 40px;
+  }
+  &__body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: $about-font-body;
+  }
+}
+.purple-theme {
+  color: $btn-contact-border-color;
+}
+
+.gold-theme {
+  color: gold;
+  font-size: 60px;
+}
+
+.trophy {
+  width: 300px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1075px) {
+  .experience {
+    flex-direction: column;
+  }
+  .experience__left {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 661px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience__left {
+    width: 100%;
+  }
+}

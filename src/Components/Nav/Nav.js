@@ -1,26 +1,25 @@
 import React from "react";
 import logo from "../../Images/logo.png";
 
-function Nav() {
+function Nav({className}) {
   return (
-    <nav className="nav">
-      <ul className="nav__menu">
-        <li className="nav__left">
+    <nav className={className?className:"nav"}>
+      <ul className={className?className+"--menu":"nav__menu"}>
+        {className?"Portfolio":(<li className="nav__left">
           <img className="logo" src={logo}></img>
           <span className="nav__logo__text">
-            My
             <b>
-              <b>Portfolio</b>
+              <b >Portfolio</b>
             </b>
           </span>
-        </li>
-        <div className="nav__items">
-          <li className="nav__item nav__item--home">Home</li>
-          <li className="nav__item nav__item--projects">Projects</li>
-          <li className="nav__item nav__item--about">About</li>
-          <li className="nav__item nav__item--skills">Skills</li>
+        </li>)}
+        <div className={className?className+"--items":"nav__items"}>
+          <li className={className?className+"--item nav__item nav__item--home":`nav__item nav__item--home`}>Home</li>
+          <li className={className?className+"--item nav__item nav__item--projects":`nav__item nav__item--projects`}>Projects</li>
+          <li className={className?className+"--item nav__item nav__item--about":`nav__item nav__item--about`}>About</li>
+          <li className={className?className+"--item nav__item nav__item--skills":`nav__item nav__item--skills`}>Skills</li>
         </div>
-        <button className="btn--contact">Contact</button>
+        {className?"":(<button className="btn--contact">Contact</button>)}
       </ul>
     </nav>
   );

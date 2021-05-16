@@ -1,30 +1,42 @@
 .skills {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto;
+
+  width: 100%;
   align-items: center;
+  justify-content: center;
 
   &__bg {
     margin-top: -80px;
     position: relative;
     width: 100%;
+    z-index: -2;
     // filter: blur(20px);
   }
   &__mid {
     margin-top: -100px;
     position: absolute;
     width: 100%;
+    z-index: -2;
   }
   &__front {
     position: absolute;
     width: 100%;
+    z-index: -2;
+  }
+  &__header {
+    color: $heading-font-color;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
 .skills__info {
   margin-top: 120px;
   position: absolute;
-  z-index: 100;
+}
+
+@media (max-width: 626px) {
 }
 
 @media (max-width: 779px) {
@@ -32,5 +44,17 @@
   .skills__bg,
   .skills__mid {
     filter: blur(20px);
+  }
+}
+
+@media (max-width: 717px) {
+  .aboutMe {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 1134px) {
+  .aboutMe--body {
+    width: 90%;
   }
 }

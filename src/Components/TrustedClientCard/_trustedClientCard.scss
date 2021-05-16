@@ -1,0 +1,29 @@
+.trusted-client-card {
+  max-width: 340px;
+  background-color: white;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  &__body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    color: $trusted-body-font-color;
+  }
+  &__occupation {
+    font-size: 13px;
+    color: $heading-font-color;
+  }
+  &__name {
+    color: $heading-font-color;
+  }
+}
+
+.lighter-font {
+  font-family: Arial, Helvetica, sans-serif;
+}

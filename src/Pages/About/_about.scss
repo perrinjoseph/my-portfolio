@@ -1,11 +1,13 @@
 .about {
-  padding: 40px 0px;
+  padding: 80px 0px;
+  background-color: $about-bg-color;
+
   &__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $font-dark-blue;
     align-items: center;
+    color: $about-light-color;
   }
   &__btn {
     margin-top: 50px;
@@ -17,14 +19,14 @@
   }
 }
 .aboutMe {
-  font-size: 40px;
+  font-size: 70px;
   text-align: center;
   &--body {
-    @extend .aboutMe;
-    width: 50%;
+    text-align: center;
+    width: 45%;
     margin-top: 25px;
     font-size: 20px;
-    color: $about-font-body;
+    color: $about-light-color;
     font-family: Arial, Helvetica, sans-serif;
   }
 }

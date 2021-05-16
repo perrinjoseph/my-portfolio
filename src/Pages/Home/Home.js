@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
+import TrustedClients from "../../Sections/TrustedClients/TrustedClients";
 import About from "../About/About";
+import Clients from "../Clients/Clients";
+import Experience from "../Experience/Experience";
+import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 import landingimg from "./OBJECTS.svg";
@@ -40,9 +44,11 @@ function Home() {
         <object type="image/svg+xml" data={landingimg}></object>
       </div>
       <About />
-      <Skills/>
-
-
+      <Skills />
+      <Clients />
+      <Projects />
+      <Experience/>
+      <TrustedClients/>
     </main>
   );
 }

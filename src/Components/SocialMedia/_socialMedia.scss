@@ -1,0 +1,17 @@
+.social-media {
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+  background-color: $social-media-bg-colog;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.smi {
+  width: 100%;
+}
