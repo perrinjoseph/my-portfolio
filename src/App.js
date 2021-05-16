@@ -2,15 +2,28 @@ import Layout from "./Components/Layout/Layout";
 import Nav from "./Components/Nav/Nav";
 import Home from "./Pages/Home/Home";
 import Footer from "./Sections/Footer/Footer";
+import { Switch, Route, Link } from "react-router-dom";
+import About from "./Pages/About/About";
+import Skills from "./Pages/Skills/Skills";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Layout>
-        <Home />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/about'>
+            <About/>
+          </Route>
+          <Route exact path='/skills'>
+            <Skills/>
+          </Route>
+        </Switch>
       </Layout>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
