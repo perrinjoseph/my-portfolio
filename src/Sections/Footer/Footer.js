@@ -34,14 +34,14 @@ function Footer() {
               existing systems, is my passion. Tell me about your product or
               idea, and lets make it happen.
             </p>
-            <ContactForm/>
+            <ContactForm />
             <div className="footer__social-media">
               <SocialMedia
                 link={"https://dribbble.com/perrinjoseph"}
                 icon={dribble}
               />
               <SocialMedia
-                link={"https://www.instagram.com/perrinjoseph/"}
+                link={"https://www.instagram.com/perrindev/"}
                 icon={insta}
               />
               <SocialMedia
@@ -49,7 +49,6 @@ function Footer() {
                 icon={github}
               />
             </div>
-           
           </div>
         </div>
       </div>

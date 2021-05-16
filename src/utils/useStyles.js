@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(20),
     height: theme.spacing(20),
     marginBottom: `30px`,
-    border: "5px solid white",
+
   },
   behind: {
     position: `absolute`,

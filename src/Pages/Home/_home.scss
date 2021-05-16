@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    margin-top: -60px;
+
     &__btns {
       display: flex;
     }
@@ -43,23 +46,9 @@
 .landingAi {
   width: 100%;
 }
-@media (max-width: 856px) {
-  .nav__item--home {
-    display: none;
-  }
-}
-@media (max-width: 718px) {
-  .nav__item--projects {
-    display: none;
-  }
-}
+
+
 @media (max-width: 486px) {
-  .nav__item--about {
-    display: none;
-  }
-  .nav__item--skills {
-    display: none;
-  }
   .typist {
     font-size: 10vw;
   }
@@ -112,4 +101,27 @@ object {
   height: 50px;
   width: 100%;
   backdrop-filter: blur(30px);
+}
+
+.hamburger__line {
+  height: 2px;
+  width: 30px;
+  background-color: black;
+  &:nth-child(2) {
+    margin: 6px 0px;
+  }
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 856px) {
+  .hidden {
+    display: none;
+  }
+  .hamburger-menu{
+    display: inline;
+  }
 }

@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import "./Styles/index.scss";
 import App from "./App";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import store from "./Redux/store";
+import { Provider } from "react-redux";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

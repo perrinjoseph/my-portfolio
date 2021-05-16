@@ -3,6 +3,7 @@ import front from "../../Images/front.png";
 import back from "../../Images/back.png";
 import mid from "../../Images/mid.png";
 import SkillTag from "../../Components/SkillTag/SkillTag";
+import ScrollToTopOnMount from "../../Components/ScrollToTop/ScrollToTopOnMount";
 
 const skills = [
   "Java",
@@ -36,7 +37,7 @@ const skills = [
   "Nextjs",
   "GraphQL",
   "Agile",
-  "Babel"
+  "Babel",
 ];
 
 function Skills() {
@@ -48,6 +49,7 @@ function Skills() {
   }, []);
   return (
     <main className="skills">
+      <ScrollToTopOnMount />
       <img
         style={{ transform: `translateY(${offsetY * 0.15}px)` }}
         className="skills__bg"
@@ -65,7 +67,9 @@ function Skills() {
       ></img>
 
       <span className="about__header skills__info">
-        <p className="skills__header">Cutting edge tech,<br></br>with a wide range of skills</p>
+        <p className="skills__header">
+          Cutting edge tech,<br></br>with a wide range of skills
+        </p>
         <p className="allTags">
           {skills.map((el, index) => (
             <SkillTag key={index} skill={el} />

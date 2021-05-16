@@ -1,8 +1,15 @@
 import React from "react";
 import logo from "../../Images/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import toggleNav from "../../Redux/actions";
 
-function Nav({ className }) {
+function Nav({ className, type }) {
+  const dispatch = useDispatch();
+
+  const handelClick = (e) => {
+    dispatch(toggleNav());
+  };
   return (
     <nav className={className ? className : "nav"}>
       <ul className={className ? className + "--menu" : "nav__menu"}>
@@ -18,13 +25,15 @@ function Nav({ className }) {
             </span>
           </li>
         )}
-        <div className={className ? className + "--items" : "nav__items"}>
+        <div
+          className={className ? className + "--items" : "nav__items hidden"}
+        >
           <NavLink className="links" to="/">
             <li
               className={
                 className
                   ? className + "--item nav__item nav__item--home"
-                  : `nav__item nav__item--home`
+                  : `nav__item nav__item--home `
               }
             >
               Home
@@ -46,7 +55,7 @@ function Nav({ className }) {
               className={
                 className
                   ? className + "--item nav__item nav__item--about"
-                  : `nav__item nav__item--about`
+                  : `nav__item nav__item--about `
               }
             >
               About
@@ -64,7 +73,20 @@ function Nav({ className }) {
             </li>
           </NavLink>
         </div>
-        {className ? "" : <button className="btn--contact">Contact</button>}
+        {className ? (
+          ""
+        ) : (
+          <div className="hamburger-menu" onClick={handelClick}>
+            <figure className="hamburger__line"></figure>
+            <figure className="hamburger__line"></figure>
+            <figure className="hamburger__line"></figure>
+          </div>
+        )}
+        {className ? (
+          ""
+        ) : (
+          <button className="btn--contact hidden">Contact</button>
+        )}
       </ul>
     </nav>
   );

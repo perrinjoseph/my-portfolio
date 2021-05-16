@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
+import ScrollToTopOnMount from "../../Components/ScrollToTop/ScrollToTopOnMount";
 import TrustedClients from "../../Sections/TrustedClients/TrustedClients";
 import About from "../About/About";
 import Clients from "../Clients/Clients";
@@ -16,6 +17,7 @@ function Home() {
   }
   return (
     <main className="home">
+      <ScrollToTopOnMount />
       <div className="home__landing">
         <div>
           <div className="home__landing__typography">
@@ -47,8 +49,8 @@ function Home() {
       <Skills />
       <Clients />
       <Projects />
-      <Experience/>
-      <TrustedClients/>
+      <Experience />
+      <TrustedClients />
     </main>
   );
 }
