@@ -1,0 +1,51 @@
+.project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0px;
+
+  &__image {
+    width: 550px;
+    border-radius: 20px;
+  }
+
+  &__headings {
+    width: 400px;
+  }
+
+  &__header {
+    font-size: 40px;
+    color: $heading-font-color;
+  }
+  &__bio {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $about-font-body;
+    margin-bottom: 20px;
+  }
+}
+
+.path {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $btn-contact-border-color;
+  }
+}
+
+@media (max-width: 1046px) {
+  .project {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .project:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .project__image {
+    width: 100%;
+  }
+  .project__headings{
+      width: 100%;
+  }
+}

@@ -21,7 +21,9 @@
 @import "../Components/SocialMedia/socialMedia";
 @import "../Components/ContactForm/contactForm";
 @import '../Components/Nav/ResponsiveNav/responsiveNav';
-
+@import '../Sections/Project/project';
+@import '../Pages/ProjectDetails/projectDetails';
+@import '../Pages/Contact/contact';
 
 body {
   overscroll-behavior-y: none;

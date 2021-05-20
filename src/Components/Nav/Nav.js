@@ -39,7 +39,7 @@ function Nav({ className, type }) {
               Home
             </li>
           </NavLink>
-          <NavLink className="links" to="/">
+          <NavLink className="links" to="/projects">
             <li
               className={
                 className
@@ -85,7 +85,9 @@ function Nav({ className, type }) {
         {className ? (
           ""
         ) : (
-          <button className="btn--contact hidden">Contact</button>
+          
+<NavLink className="btn--contact links-custom hidden"to="/contact">Contact</NavLink>
+
         )}
       </ul>
     </nav>

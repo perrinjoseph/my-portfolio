@@ -34,7 +34,7 @@ function ResponsiveNav({ className }) {
           {className ? (
             ""
           ) : (
-            <button className="btn--contact footer-btn">Contact</button>
+            <NavLink className="btn--contact footer-btn links-custom "to="/contact">Contact</NavLink>
           )}
         </ul>
       </div>

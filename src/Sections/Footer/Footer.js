@@ -6,6 +6,7 @@ import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import insta from "../../Images/instagram.png";
 import github from "../../Images/github.png";
 import ContactForm from "../../Components/ContactForm/ContactForm";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,9 +17,13 @@ function Footer() {
             <Nav className={"footer__nav"} />
             <div>
               <p>
-                <button className="btn--contact footer-btn">
+                <NavLink
+                  className="btn--contact footer-btn links-custom"
+                  to="/contact"
+                >
                   Get in touch
-                </button>
+                </NavLink>
+
                 <br></br>
               </p>
             </div>
@@ -41,7 +46,7 @@ function Footer() {
                 icon={dribble}
               />
               <SocialMedia
-                link={"https://www.instagram.com/perrindev/"}
+                link={"https://www.instagram.com/wethinkreact/"}
                 icon={insta}
               />
               <SocialMedia

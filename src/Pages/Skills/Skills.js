@@ -50,22 +50,6 @@ function Skills() {
   return (
     <main className="skills">
       <ScrollToTopOnMount />
-      <img
-        style={{ transform: `translateY(${offsetY * 0.15}px)` }}
-        className="skills__bg"
-        src={back}
-      ></img>
-      <img
-        style={{ transform: `translateY(${offsetY * 0.2}px)` }}
-        className="skills__mid"
-        src={mid}
-      ></img>
-      <img
-        style={{ transform: `translateY(${offsetY * 0.07}px)` }}
-        className="skills__front"
-        src={front}
-      ></img>
-
       <span className="about__header skills__info">
         <p className="skills__header">
           Cutting edge tech,<br></br>with a wide range of skills
@@ -76,6 +60,25 @@ function Skills() {
           ))}
         </p>
       </span>
+      <img
+        style={{ transform: `translateY(${offsetY * 0.15}px)` }}
+        className="skills__bg"
+        src={back}
+      ></img>
+      
+      <img
+        style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+        className="skills__mid"
+        src={mid}
+      ></img>
+      
+      <img
+        style={{ transform: `translateY(${offsetY * 0.07}px)` }}
+        className="skills__front"
+        src={front}
+      ></img>
+
+     
     </main>
   );
 }

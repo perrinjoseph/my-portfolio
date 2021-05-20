@@ -6,6 +6,7 @@ import years from "../../utils/yearsOfExperience";
 import useStyles from "../../utils/useStyles";
 import profilepic from "../../Images/profilepic.jpg";
 import ScrollToTopOnMount from "../../Components/ScrollToTop/ScrollToTopOnMount";
+import { NavLink } from "react-router-dom";
 
 function About() {
   const classes = useStyles();
@@ -26,7 +27,7 @@ function About() {
           pages, working on user interface applications and professional web
           applications using modern development tools
         </p>
-        <button className="btn--skills about__btn">Connect</button>
+        <NavLink to="/contact"><button className="btn--skills about__btn">Connect</button></NavLink>
       </header>
     </main>
   );

@@ -1,25 +1,28 @@
 .skills {
   display: flex;
   margin: auto;
-
   width: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  height: auto;
+  padding: 200px 0px;
 
   &__bg {
-    margin-top: -80px;
-    position: relative;
+    margin-top: -200px;
+    position: absolute;
     width: 100%;
     z-index: -2;
     // filter: blur(20px);
   }
   &__mid {
-    margin-top: -100px;
+    margin-top: -300px;
     position: absolute;
     width: 100%;
     z-index: -2;
   }
   &__front {
+    margin-top: -50px;
     position: absolute;
     width: 100%;
     z-index: -2;
@@ -32,8 +35,6 @@
 }
 
 .skills__info {
-  margin-top: 120px;
-  position: absolute;
 }
 
 @media (max-width: 626px) {

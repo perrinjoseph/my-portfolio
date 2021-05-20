@@ -6,9 +6,9 @@ import avatar3 from '../../Images/avatar3.jpg'
 function HappyClients() {
     return (
         <div className="trusted-clients">
-            <header className="trusted-clients__header">Trusted by clients</header>
+            <header className="trusted-clients__header">Trusted by clients <br></br>nationwide</header>
 
-            <div className="row">
+            <div className="row clients-row">
                 <TrustedClientCard occupation={"Designer"} name={"Perrin"} avatar={avatar1}/>
                 <TrustedClientCard occupation={"React Developer"} name={"Emmanuel"} avatar={avatar2}/>
                 <TrustedClientCard occupation={"Software Engineer"} name={"Joseph"} avatar={avatar3}/>

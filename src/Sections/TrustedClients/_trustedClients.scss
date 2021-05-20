@@ -12,6 +12,11 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 60px;
+  }
+}
 
+@media (nax-width: 915px) {
+  .clients-row {
+    flex-direction: column;
   }
 }
