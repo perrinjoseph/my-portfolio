@@ -17,12 +17,7 @@ function Footer() {
             <Nav className={"footer__nav"} />
             <div>
               <p>
-                <NavLink
-                  className="btn--contact footer-btn links-custom"
-                  to="/contact"
-                >
-                  Get in touch
-                </NavLink>
+
 
                 <br></br>
               </p>
