@@ -20,10 +20,16 @@
 @import "../Sections/Footer/footer";
 @import "../Components/SocialMedia/socialMedia";
 @import "../Components/ContactForm/contactForm";
-@import '../Components/Nav/ResponsiveNav/responsiveNav';
-@import '../Sections/Project/project';
-@import '../Pages/ProjectDetails/projectDetails';
-@import '../Pages/Contact/contact';
+@import "../Components/Nav/ResponsiveNav/responsiveNav";
+@import "../Sections/Project/project";
+@import "../Pages/ProjectDetails/projectDetails";
+@import "../Pages/Contact/contact";
+
+html {
+  min-height: calc(100% + env(safe-area-inset-top));
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
 
 body {
   overscroll-behavior-y: none;
