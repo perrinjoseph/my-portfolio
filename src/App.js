@@ -2,12 +2,11 @@ import Layout from "./Components/Layout/Layout";
 import Nav from "./Components/Nav/Nav";
 import Home from "./Pages/Home/Home";
 import Footer from "./Sections/Footer/Footer";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import About from "./Pages/About/About";
 import Skills from "./Pages/Skills/Skills";
 import ResponsiveNav from "./Components/Nav/ResponsiveNav/ResponsiveNav";
 import Projects from "./Pages/Projects/Projects";
-import Project from "./Sections/Project/Project";
 import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 import clara from "./Images/claraproject.webp";
 import jreport from "./Images/jreport.png";
@@ -61,7 +60,7 @@ function App() {
             />
           </Route>
           <Route path="/contact">
-              <Contact/>
+            <Contact />
           </Route>
         </Switch>
       </Layout>

@@ -5,7 +5,7 @@ function ProjectDetails({ image, header, description }) {
   return (
     <div className="project-details">
       <ScrollToTopOnMount />
-      <img className="project-details__image" src={image}></img>
+      <img className="project-details__image" src={image} alt="Project"></img>
       <div className="project-details__info">
         <h1 className="project-details__header">{header}</h1>
         <p className="project-details__description">{description}</p>

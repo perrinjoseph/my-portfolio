@@ -7,7 +7,7 @@ function Experience() {
   return (
     <main className="experience">
       <div className="experience__left">
-        <img className="trophy" src={trophy}></img>
+        <img className="trophy" src={trophy} alt="trophy"></img>
         <header className="experience__header">
           <span className="gold-theme">{years} </span>years of Expertise
         </header>

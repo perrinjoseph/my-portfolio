@@ -3,8 +3,6 @@ import Project from "../../Sections/Project/Project";
 import clara from "../../Images/claraproject.webp";
 import jreport from "../../Images/jreport.png";
 import optima from "../../Images/Kelton Optima.png";
-import ScrollToTopOnMount from "../../Components/ScrollToTop/ScrollToTopOnMount";
-
 
 function Projects() {
   return (
@@ -34,7 +32,6 @@ function Projects() {
         image={optima}
         path={"optima"}
       />
-      
     </main>
   );
 }

@@ -6,7 +6,6 @@ import SocialMedia from "../../Components/SocialMedia/SocialMedia";
 import insta from "../../Images/instagram.png";
 import github from "../../Images/github.png";
 import ContactForm from "../../Components/ContactForm/ContactForm";
-import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -17,8 +16,6 @@ function Footer() {
             <Nav className={"footer__nav"} />
             <div>
               <p>
-
-
                 <br></br>
               </p>
             </div>
@@ -26,7 +23,7 @@ function Footer() {
 
           <div className="footer__right">
             <div className="footer__right__top">
-              <img className="footer__logo" src={logo}></img>
+              <img className="footer__logo" src={logo} alt="Logo"></img>
               <span className="footer__nav--menu">Portfolio</span>
             </div>
             <p className="footer__right__body">

@@ -1,7 +1,5 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
-import avatar from "../../Images/avatar.jpeg";
-import zIndex from "@material-ui/core/styles/zIndex";
 import years from "../../utils/yearsOfExperience";
 import useStyles from "../../utils/useStyles";
 import profilepic from "../../Images/profilepic.jpg";
@@ -27,7 +25,9 @@ function About() {
           pages, working on user interface applications and professional web
           applications using modern development tools
         </p>
-        <NavLink to="/contact"><button className="btn--skills about__btn">Connect</button></NavLink>
+        <NavLink to="/contact">
+          <button className="btn--skills about__btn">Connect</button>
+        </NavLink>
       </header>
     </main>
   );

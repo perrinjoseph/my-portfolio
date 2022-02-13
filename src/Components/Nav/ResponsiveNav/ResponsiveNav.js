@@ -1,15 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { closeNav } from "../../../Redux/actions";
 
 function ResponsiveNav({ className }) {
+  const dispatch = useDispatch();
   const data = useSelector((data) => data.toggleNav);
-
+  const navTitles = ["Home", "Projects", "About", "Skills", "Contact"];
   return (
-    <nav className={`responsive-nav ${data?"openNav":""}`}>
+    <nav className={`responsive-nav ${data ? "openNav" : ""}`}>
       <div className="container">
         <ul className="responsive-nav__menu">
-          <div>
+          <div
+            onClick={(e) => {
+              if (navTitles.includes(e.target.innerText)) {
+                dispatch(closeNav());
+              }
+            }}
+          >
             <NavLink className="links" to="/">
               <li className="nav__item nav__item--home responsive-nav__item">
                 Home
@@ -34,7 +42,12 @@ function ResponsiveNav({ className }) {
           {className ? (
             ""
           ) : (
-            <NavLink className="btn--contact footer-btn links-custom "to="/contact">Contact</NavLink>
+            <NavLink
+              className="btn--contact footer-btn links-custom "
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           )}
         </ul>
       </div>

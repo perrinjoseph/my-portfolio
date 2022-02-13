@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Images/logo.png";
-import { Link, NavLink } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import toggleNav from "../../Redux/actions";
 
 function Nav({ className, type }) {
@@ -10,20 +10,23 @@ function Nav({ className, type }) {
   const handelClick = (e) => {
     dispatch(toggleNav());
   };
+
   return (
     <nav className={className ? className : "nav"}>
       <ul className={className ? className + "--menu" : "nav__menu"}>
         {className ? (
           "Portfolio"
         ) : (
-          <li className="nav__left">
-            <img className="logo" src={logo}></img>
-            <span className="nav__logo__text">
-              <b>
-                <b>Portfolio</b>
-              </b>
-            </span>
-          </li>
+          <NavLink className="logo-font" to="/">
+            <li className="nav__left">
+              <img className="logo" src={logo} alt="Logo"></img>
+              <span className="nav__logo__text">
+                <b>
+                  <b>Portfolio</b>
+                </b>
+              </span>
+            </li>
+          </NavLink>
         )}
         <div
           className={className ? className + "--items" : "nav__items hidden"}
@@ -85,9 +88,9 @@ function Nav({ className, type }) {
         {className ? (
           ""
         ) : (
-          
-<NavLink className="btn--contact links-custom hidden"to="/contact">Contact</NavLink>
-
+          <NavLink className="btn--contact links-custom hidden" to="/contact">
+            Contact
+          </NavLink>
         )}
       </ul>
     </nav>

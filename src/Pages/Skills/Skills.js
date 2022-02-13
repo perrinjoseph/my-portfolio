@@ -64,21 +64,22 @@ function Skills() {
         style={{ transform: `translateY(${offsetY * 0.15}px)` }}
         className="skills__bg"
         src={back}
+        alt="Skill"
       ></img>
-      
+
       <img
         style={{ transform: `translateY(${offsetY * 0.2}px)` }}
         className="skills__mid"
         src={mid}
+        alt="Skill"
       ></img>
-      
+
       <img
         style={{ transform: `translateY(${offsetY * 0.07}px)` }}
         className="skills__front"
         src={front}
+        alt="Skill"
       ></img>
-
-     
     </main>
   );
 }
